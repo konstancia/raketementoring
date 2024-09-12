@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VQL3budSge2LzPnx0uvbiwdPvjFTkyGV+YAyGdZ3sJFSyQawARs5rN+GpBZRX48xkT+8wlXagC20xzeTkZW3Cg==",
+  "dgSpecHash": "SAL2ZZ9KY/c4zf90USn5CnR9BR4BSOKwab5TGPjUI3+T8WeECuOpsdToc8KYkRWfWoekUBdXzTnMg7TYVwmsuQ==",
   "success": true,
-  "projectFilePath": "/Users/konstanciamilova/RiderProjects/ConsoleApp2/CostCalculator/CostCalculator.csproj",
+  "projectFilePath": "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/CostCalculator/CostCalculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

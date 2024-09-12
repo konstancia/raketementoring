@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/CostCalculator/CostCalculator.csproj": {}
+    "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/Practice.csproj": {}
   },
   "projects": {
-    "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/CostCalculator/CostCalculator.csproj": {
+    "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/CostCalculator/CostCalculator.csproj",
-        "projectName": "CostCalculator",
-        "projectPath": "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/CostCalculator/CostCalculator.csproj",
+        "projectUniqueName": "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/Practice.csproj",
+        "projectName": "Practice",
+        "projectPath": "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/Practice.csproj",
         "packagesPath": "/Users/konstanciamilova/.nuget/packages/",
-        "outputPath": "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/CostCalculator/obj/",
+        "outputPath": "/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/konstanciamilova/.nuget/NuGet/NuGet.Config"
