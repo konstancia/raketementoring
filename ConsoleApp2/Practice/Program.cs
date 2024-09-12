@@ -13,6 +13,10 @@ namespace Practice
             
             Console.WriteLine(aString + "this is me" + pamela + "is your name" + tanga);
             
+            Console.WriteLine("{0} this is {1} is your name? {2}", aString, pamela, tanga);
+            
+            Console.WriteLine($"{aString} this is me {pamela} is your name?  + {tanga}");
+            
             //int numberOne = 15;
             int numberTwo = 20;
             int numberOne = Convert.ToInt32(Console.ReadLine());

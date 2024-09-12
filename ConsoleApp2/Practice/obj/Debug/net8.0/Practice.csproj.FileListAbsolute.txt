@@ -1,0 +1,5 @@
+/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/obj/Debug/net8.0/Practice.GeneratedMSBuildEditorConfig.editorconfig
+/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/obj/Debug/net8.0/Practice.AssemblyInfoInputs.cache
+/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/obj/Debug/net8.0/Practice.AssemblyInfo.cs
+/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/obj/Debug/net8.0/Practice.csproj.CoreCompileInputs.cache
+/Users/konstanciamilova/RiderProjects/raketementoring/raketementoring/ConsoleApp2/Practice/obj/Debug/net8.0/Practice.sourcelink.json
