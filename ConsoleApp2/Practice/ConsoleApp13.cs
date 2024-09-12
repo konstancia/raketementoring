@@ -9,6 +9,8 @@ namespace ConsoleApp13
             int numberOfAppendages = 4;
             int numberOfCountries = 195;
             
+            //use const if numbers are not going to change
+            
             Console.WriteLine("How many people?");
             int peopleCount = int.Parse(Console.ReadLine());
 

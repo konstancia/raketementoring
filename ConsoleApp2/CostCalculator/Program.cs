@@ -6,20 +6,16 @@ namespace CostCalculator
     {
         static void Main(string[] args)
         {
-            //int numberOne = 15;
-            int numberTwo = 20;
-            int numberOne = Convert.ToInt32(Console.ReadLine());
+            int floorWidth = 20;
+            int floorLength = 15;
+            int floorCost = 50;
+            int area = floorWidth + floorLength * floorCost;
             
-
-            int result = numberOne * numberTwo;
-            Console.WriteLine(result);
-
-            string myText = Console.ReadLine();
-            
-            Console.WriteLine("You entered: " + myText);
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Hello, Fred!");
-        }
-
+        Console.WriteLine("Please enter width, length, and the cost per 1 unit of flooring.");
+        
+        int totalCost = (area);
+        Console.WriteLine(totalCost);
     }
+
+}
 }
