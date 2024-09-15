@@ -8,7 +8,7 @@ namespace CostCalculatorFinal
         {
             
             Console.WriteLine("Please enter width of flooring.");
-            string floorWidth = Console.ReadLine();
+            int floorWidth = int.Parse(Console.ReadLine());
             
             Console.WriteLine("Please enter length flooring.");
             string floorLength = Console.ReadLine();
@@ -20,10 +20,6 @@ namespace CostCalculatorFinal
             //int floorLength = 15;
             //int floorCost = 50;
             //int area = floorWidth * floorLength ;
-          
-            //string floorW = Console.ReadLine();
-            
-        
         
             //int totalCost = (area);
             //Console.WriteLine(totalCost);
