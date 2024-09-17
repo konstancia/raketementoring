@@ -10,25 +10,25 @@ namespace CostCalculatorFinal
             Console.WriteLine(
                 "Hello, user. You will be prompted to enter width, length, and the cost per 1 unit of flooring");
 
-            Console.WriteLine("Please enter width");
-            int myWidth = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter width: ");
+            int Width = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("you entered width: " + myWidth);
+            Console.WriteLine("you entered width: " + Width);
 
-            Console.WriteLine("Please enter length");
-            int myLength = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter length: ");
+            int Length = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("You entered Lengh: " + myLength);
+            Console.WriteLine("You entered Lengh: " + Length);
             
-            int area = myWidth + myLength;
-            Console.WriteLine("Total area for project " + area);
+            int area = Width + Length;
+            Console.WriteLine("Total area for project: " + area);
             
             Console.WriteLine("Now we're going to calculate the cost for your project");
 
-            int cost = 5;
+            double cost = 5;
                 
-            int totalCost = (cost * area);
-            Console.WriteLine("Your total project cost " + totalCost);
+            double totalCost = (cost * area);
+            Console.WriteLine("Your total project cost: " + totalCost);
         }
 
     }
