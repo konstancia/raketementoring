@@ -29,6 +29,25 @@ namespace CostCalculatorFinal
                 
             double totalCost = (cost * area);
             Console.WriteLine("Your total project cost: " + totalCost);
+            
+            Console.WriteLine("Please choose another shape for non-rectangular room: ex: (circle, triangle");
+            string nonrectengular = (Console.ReadLine());
+            
+            Console.WriteLine("You choose the following shape: " + nonrectengular);
+            
+            Console.WriteLine("Please enter height of the circle: ");
+            int circleLenght = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Please enter widgth of the circle: ");
+            int circleWidth = Convert.ToInt32(Console.ReadLine());
+            
+            int areaCircle = circleLenght * circleWidth;
+            
+            Console.WriteLine("Total area for project: " + areaCircle);
+            
+            
+
+
         }
 
     }
