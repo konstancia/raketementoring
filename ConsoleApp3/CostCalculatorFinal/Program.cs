@@ -6,9 +6,13 @@ namespace CostCalculatorFinal
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please choose another shape for non-rectangular room: ex: (circle, triangle");
+            string Shape = (Console.ReadLine());
+            
+            Console.WriteLine("You choose the following shape: " + Shape);
 
             Console.WriteLine(
-                "Hello, user. You will be prompted to enter width, length, and the cost per 1 unit of flooring");
+                "Hello, user. You will be prompted to enter width, length, and the cost per 1 unit of flooring for your room shape");
 
             Console.WriteLine("Please enter width: ");
             int Width = Convert.ToInt32(Console.ReadLine());
