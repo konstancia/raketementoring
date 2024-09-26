@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Diagnostics;
+
 namespace CostCalculatorFinal
 {
     internal class Program2
@@ -7,80 +9,70 @@ namespace CostCalculatorFinal
         static void Main(string[] args)
         {
 
-            const string rectangle = "square";
-            const string circle = "circle";
+            const string RECTANGLE = "square";
+            const string CIRCLE = "circle";
+            const string TRIANGLE = "triangle";
+            const double PI = Double.Pi;
 
 
             Console.WriteLine("Please choose another shape for non-rectangular room: ex: (circle, triangle");
-            string Shape = (Console.ReadLine());
+            string shape = (Console.ReadLine());
 
-            Console.WriteLine("You choose the following shape: " + Shape);
+            Console.WriteLine("You choose the following shape: " + shape);
+            double area;
 
-            Console.WriteLine(
-                "Hello, user. You will be prompted to enter width, length, and the cost per 1 unit of flooring for your room shape");
-
-            Console.WriteLine("Please enter width: ");
-            int Width = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("you entered width: " + Width);
-
-            Console.WriteLine("Please enter length: ");
-            int Length = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("You entered Length: " + Length);
-
-            int areaSquare = Width + Length;
-            Console.WriteLine("Total area for project: " + areaSquare);
-
-            Console.WriteLine("Now we're going to calculate the cost for your project");
-
-            int costPerHourSquare = 86;
-
-            int totalCost = (costPerHourSquare * areaSquare);
-            Console.WriteLine("Your total project cost: " + totalCost);
-
-            if (totalCost < 500)
+            if (shape == CIRCLE)
             {
-                Console.WriteLine(" Good Deal");
+                Console.WriteLine("You have chosen circle shape");
+                Console.WriteLine("Please enter radius: ");
+                int circleRadius = Convert.ToInt32(Console.ReadLine());
+
+                area = circleRadius * circleRadius * PI;
+                
+                Console.WriteLine("Your area calcuations are " + circleRadius);
+
+                //radius^2*pi
             }
+
+            // if case to handle the triangle shapes
+            if (shape == TRIANGLE)
+            {
+                Console.WriteLine("You have chosen triangle shape");
+                Console.WriteLine("Please enter area: ");
+                int triangleArea = Convert.ToInt32(Console.ReadLine());
+
+                area = triangleArea * triangleArea * PI;
+                
+                Console.WriteLine("Your area calcuations are " + triangleArea;
+
+            }
+            // if case to handle rectangle shapes
+
+            if (shape == RECTANGLE)
+            {
+                Console.WriteLine("You have chosen rectangle ");
+                Console.WriteLine("Please enter area: ");
+                int rectangleArea = Convert.ToInt32(Console.ReadLine());
+
+                area = rectangleArea * rectangleArea * PI;
+                Console.WriteLine("Your area calcuations are " + rectangleArea);
+
+            }
+
             else
             {
-                Console.WriteLine(" Hope you have a coupon");
+                Console.WriteLine("you have chosen unsupported shape");
             }
-
-
-            Console.WriteLine("Please choose another shape for non-rectangular room: ex: (circle, triangle");
-            string roomShape = (Console.ReadLine());
-
-            Console.WriteLine("You choose the following shape: " + roomShape);
-
-            Console.WriteLine("Please enter height of the circle: ");
-            int circleLenght = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Please enter width of the circle: ");
-            int circleWidth = Convert.ToInt32(Console.ReadLine());
-
-            int areaCircle = circleLenght * circleWidth;
-
-            Console.WriteLine("Total area for project: " + areaCircle);
-
-            Console.WriteLine("Now we're going to calculate the cost for your new project");
-
-            int  costPerHourCircle = 86;
-
-            double totalCostCircle = (costPerHourCircle * areaCircle);
-            Console.WriteLine("Your total project cost: " + totalCostCircle);
-            
-            if (totalCostCircle < 10000)
-            {
-                Console.WriteLine(" Good Deal");
-            }
-            else
-            {
-                Console.WriteLine(" Hope you have a coupon");
-            }
+        }
+    }
     }
 
-    }
-    
-}
+//you should be calculating the total cost which is dependent to the area and includes labor
+
+
+            // int  costPerHour = 86;
+
+
+
+
+        
