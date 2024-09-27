@@ -9,17 +9,18 @@ namespace CostCalculatorFinal
         static void Main(string[] args)
         {
 
-            const string RECTANGLE = "square";
+            const string RECTANGLE = "rectangle";
             const string CIRCLE = "circle";
             const string TRIANGLE = "triangle";
             const double PI = Double.Pi;
 
 
-            Console.WriteLine("Please choose another shape for non-rectangular room: ex: (circle, triangle");
+            Console.WriteLine("Please choose a room shape: " +CIRCLE   +TRIANGLE   +RECTANGLE);
             string shape = (Console.ReadLine());
 
             Console.WriteLine("You choose the following shape: " + shape);
             double area;
+            double cost;
 
             if (shape == CIRCLE)
             {
@@ -29,7 +30,10 @@ namespace CostCalculatorFinal
 
                 area = circleRadius * circleRadius * PI;
                 
-                Console.WriteLine("Your area calcuations are " + circleRadius);
+                Console.WriteLine("Your area calcuations are " + area);
+
+                cost = area * (86);
+                Console.WriteLine("Your total project cost is: " + cost);
 
                 //radius^2*pi
             }
@@ -38,26 +42,43 @@ namespace CostCalculatorFinal
             if (shape == TRIANGLE)
             {
                 Console.WriteLine("You have chosen triangle shape");
-                Console.WriteLine("Please enter area: ");
-                int triangleArea = Convert.ToInt32(Console.ReadLine());
-
-                area = triangleArea * triangleArea * PI;
+                Console.WriteLine("Please enter area width: ");
+                int triangleAreaWidth = Convert.ToInt32(Console.ReadLine());
                 
-                Console.WriteLine("Your area calcuations are " + triangleArea;
+                Console.WriteLine("Please enter area height: ");
+                int triangleAreaHeight = Convert.ToInt32(Console.ReadLine());
+                
+
+                area = triangleAreaWidth * triangleAreaHeight * PI;
+                
+                Console.WriteLine("Your area calcuations are " + area);
+                
+                cost = area * (86);
+                Console.WriteLine("Your total project cost is: " + cost);
 
             }
             // if case to handle rectangle shapes
 
             if (shape == RECTANGLE)
             {
-                Console.WriteLine("You have chosen rectangle ");
-                Console.WriteLine("Please enter area: ");
-                int rectangleArea = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("You have chosen a rectangle ");
+                Console.WriteLine("Please enter area width: ");
+                int rectangleAreaWidth = Convert.ToInt32(Console.ReadLine());
 
-                area = rectangleArea * rectangleArea * PI;
-                Console.WriteLine("Your area calcuations are " + rectangleArea);
+                Console.WriteLine("Please enter area height: ");
+                int rectangleAreaHeight = Convert.ToInt32(Console.ReadLine());
+                
+                
+                area = rectangleAreaWidth * rectangleAreaHeight * PI;
+                Console.WriteLine("Your area calcuations are " + area);
+                
+                cost = area * (86);
+                Console.WriteLine("Your total project cost is: " + cost);
 
             }
+            
+            if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
+                Console.WriteLine("Valid shape");
 
             else
             {
@@ -67,10 +88,7 @@ namespace CostCalculatorFinal
     }
     }
 
-//you should be calculating the total cost which is dependent to the area and includes labor
 
-
-            // int  costPerHour = 86;
 
 
 
