@@ -13,14 +13,17 @@ namespace CostCalculatorFinal
             const string CIRCLE = "circle";
             const string TRIANGLE = "triangle";
             const double PI = Double.Pi;
+            const int HOURLYRATE = 86;
+          
 
 
-            Console.WriteLine("Please choose a room shape: " +CIRCLE   +TRIANGLE   +RECTANGLE);
+            Console.WriteLine($"Please choose a room shape:  {RECTANGLE} , {CIRCLE} ,  {TRIANGLE} " );
             string shape = (Console.ReadLine());
 
             Console.WriteLine("You choose the following shape: " + shape);
             double area;
             double cost;
+            
 
             if (shape == CIRCLE)
             {
@@ -32,7 +35,7 @@ namespace CostCalculatorFinal
                 
                 Console.WriteLine("Your area calcuations are " + area);
 
-                cost = area * (86);
+                cost = area / HOURLYRATE;
                 Console.WriteLine("Your total project cost is: " + cost);
 
                 //radius^2*pi
@@ -50,10 +53,11 @@ namespace CostCalculatorFinal
                 
 
                 area = triangleAreaWidth * triangleAreaHeight * PI;
+                cost = area / HOURLYRATE;
                 
                 Console.WriteLine("Your area calcuations are " + area);
                 
-                cost = area * (86);
+                
                 Console.WriteLine("Your total project cost is: " + cost);
 
             }
@@ -72,7 +76,7 @@ namespace CostCalculatorFinal
                 area = rectangleAreaWidth * rectangleAreaHeight * PI;
                 Console.WriteLine("Your area calcuations are " + area);
                 
-                cost = area * (86);
+                cost = area / HOURLYRATE;
                 Console.WriteLine("Your total project cost is: " + cost);
 
             }
