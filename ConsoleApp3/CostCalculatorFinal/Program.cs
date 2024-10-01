@@ -22,11 +22,12 @@ namespace CostCalculatorFinal
 
             Console.WriteLine("You choose the following shape: " + shape);
             double area = 0;
-            double cost;
+            double cost = 0;
             double hour;
-            
+            //int validShape = 0;
 
-            if (shape == CIRCLE)
+
+        if (shape == CIRCLE)
             {
                 Console.WriteLine("You have chosen circle shape");
                 Console.WriteLine("Please enter radius: ");
@@ -89,25 +90,25 @@ namespace CostCalculatorFinal
 
 
             }
-            
+
             hour = area / SQUARE_FEET_PER_HOUR;
             Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
 
             cost = hour * HOURLY_RATE;
             Console.WriteLine("Your total project cost is: " + cost);
 
+            if (area == 0 & cost == 0)
+                Console.WriteLine("Nothing to calculate");
+
             if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
                 Console.WriteLine("Valid shape");
-            
+
 
             else
             {
                 Console.WriteLine("you have chosen unsupported shape");
             }
-
-           
-
-        }
+    }
     }
 }
 
