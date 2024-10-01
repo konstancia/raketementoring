@@ -21,7 +21,7 @@ namespace CostCalculatorFinal
             string shape = (Console.ReadLine());
 
             Console.WriteLine("You choose the following shape: " + shape);
-            double area;
+            double area = 0;
             double cost;
             double hour;
             
@@ -89,7 +89,7 @@ namespace CostCalculatorFinal
 
 
             }
-
+            
             hour = area / SQUARE_FEET_PER_HOUR;
             Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
 
@@ -98,13 +98,15 @@ namespace CostCalculatorFinal
 
             if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
                 Console.WriteLine("Valid shape");
+            
 
             else
             {
                 Console.WriteLine("you have chosen unsupported shape");
             }
-            
+
            
+
         }
     }
 }
