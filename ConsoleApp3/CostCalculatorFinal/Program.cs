@@ -15,6 +15,7 @@ namespace CostCalculatorFinal
             const double PI = Double.Pi;
             const int SQUARE_FEET_PER_HOUR = 20;
             const int HOURLY_RATE = 86;
+            const int TRIANGLE_AREA = 2;
 
 
             Console.WriteLine($"Please choose a room shape:  {RECTANGLE} for Rectanble , {CIRCLE} for Circle,  {TRIANGLE} for Triangle");
@@ -24,10 +25,7 @@ namespace CostCalculatorFinal
             double area = 0;
             double cost = 0;
             double hour;
-        
             
-            
-
         if (shape == CIRCLE)
             {
                 Console.WriteLine("You have chosen circle shape");
@@ -49,11 +47,11 @@ namespace CostCalculatorFinal
                 Console.WriteLine("Please enter area width: ");
                 int triangleAreaWidth = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Please enter area height: ");
-                int triangleAreaHeight = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter area lenght: ");
+                int triangleAreaLenght = Convert.ToInt32(Console.ReadLine());
 
 
-                area = triangleAreaWidth * triangleAreaHeight * PI;
+                area = triangleAreaWidth * triangleAreaLenght / TRIANGLE_AREA;
                 Console.WriteLine("Your area calculations are " + area);
 
 
@@ -67,10 +65,10 @@ namespace CostCalculatorFinal
                 int rectangleAreaWidth = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Please enter area height: ");
-                int rectangleAreaHeight = Convert.ToInt32(Console.ReadLine());
+                int rectangleAreaLenght = Convert.ToInt32(Console.ReadLine());
 
 
-                area = rectangleAreaWidth * rectangleAreaHeight * PI;
+                area = rectangleAreaWidth * rectangleAreaLenght * PI;
                 Console.WriteLine("Your area calculations are " + area);
                 
                 
@@ -83,7 +81,7 @@ namespace CostCalculatorFinal
                 Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
 
                 cost = hour * HOURLY_RATE;
-                Console.WriteLine("Your total project cost is: " + cost);
+                Console.WriteLine("Your total project cost is: $" + cost +" " + "dollars");
                 Console.WriteLine(("Supported shape"));
             }
 
