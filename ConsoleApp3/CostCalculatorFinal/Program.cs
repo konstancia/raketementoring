@@ -17,15 +17,16 @@ namespace CostCalculatorFinal
             const int HOURLY_RATE = 86;
 
 
-            Console.WriteLine($"Please choose a room shape:  {RECTANGLE} , {CIRCLE} ,  {TRIANGLE} ");
+            Console.WriteLine($"Please choose a room shape:  {RECTANGLE} for Rectanble , {CIRCLE} for Circle,  {TRIANGLE} for Triangle");
             string shape = (Console.ReadLine());
 
             Console.WriteLine("You choose the following shape: " + shape);
             double area = 0;
             double cost = 0;
             double hour;
-            //int validShape = 0;
-
+        
+            
+            
 
         if (shape == CIRCLE)
             {
@@ -36,16 +37,12 @@ namespace CostCalculatorFinal
                 area = circleRadius * circleRadius * PI;
                 Console.WriteLine("Your area calcuations are " + area);
 
-                //hour = area / SQUARE_FEET_PER_HOUR;
-                //Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
-
-                //cost = hour * HOURLY_RATE;
-                //Console.WriteLine("Your total project cost is: " + cost);
-
                 //radius^2*pi
             }
 
             // if case to handle the triangle shapes
+            
+            
             if (shape == TRIANGLE)
             {
                 Console.WriteLine("You have chosen triangle shape");
@@ -58,12 +55,6 @@ namespace CostCalculatorFinal
 
                 area = triangleAreaWidth * triangleAreaHeight * PI;
                 Console.WriteLine("Your area calculations are " + area);
-
-                //hour = area / SQUARE_FEET_PER_HOUR;
-                //Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
-
-                //cost = hour * HOURLY_RATE;
-                //Console.WriteLine("Your total project cost is: " + cost);
 
 
             }
@@ -81,33 +72,26 @@ namespace CostCalculatorFinal
 
                 area = rectangleAreaWidth * rectangleAreaHeight * PI;
                 Console.WriteLine("Your area calculations are " + area);
-
-                //hour = area / SQUARE_FEET_PER_HOUR;
-                //Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
-
-                //cost = hour * HOURLY_RATE;
-                //Console.WriteLine("Your total project cost is: " + cost);
-
-
+                
+                
             }
 
-            hour = area / SQUARE_FEET_PER_HOUR;
-            Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
-
-            cost = hour * HOURLY_RATE;
-            Console.WriteLine("Your total project cost is: " + cost);
-
-            if (area == 0 & cost == 0)
-                Console.WriteLine("Nothing to calculate");
-
             if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
+            {
                 Console.WriteLine("Valid shape");
+                hour = area / SQUARE_FEET_PER_HOUR;
+                Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
 
+                cost = hour * HOURLY_RATE;
+                Console.WriteLine("Your total project cost is: " + cost);
+                Console.WriteLine(("Supported shape"));
+            }
 
             else
             {
                 Console.WriteLine("you have chosen unsupported shape");
             }
+            
     }
     }
 }
