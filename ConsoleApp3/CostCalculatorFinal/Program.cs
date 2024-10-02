@@ -18,7 +18,7 @@ namespace CostCalculatorFinal
             const int TRIANGLE_AREA = 2;
 
 
-            Console.WriteLine($"Please choose a room shape:  {RECTANGLE} for Rectanble , {CIRCLE} for Circle,  {TRIANGLE} for Triangle");
+            Console.WriteLine($"Please choose a room shape:  {RECTANGLE} for Rectangle , {CIRCLE} for Circle,  {TRIANGLE} for Triangle");
             string shape = (Console.ReadLine());
 
             Console.WriteLine("You choose the following shape: " + shape);
