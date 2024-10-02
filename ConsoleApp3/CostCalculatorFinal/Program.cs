@@ -81,7 +81,7 @@ namespace CostCalculatorFinal
                 Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
 
                 cost = hour * HOURLY_RATE;
-                Console.WriteLine("Your total project cost is: $" + Math.Round(cost));
+                Console.WriteLine("Your total project cost is: $" + Math.Round(cost) + " " + "dollars");
                 Console.WriteLine(("Supported shape"));
             }
 
