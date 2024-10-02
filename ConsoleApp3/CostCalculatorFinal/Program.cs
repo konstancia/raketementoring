@@ -23,7 +23,7 @@ namespace CostCalculatorFinal
 
             Console.WriteLine("You choose the following shape: " + shape);
             double area = 0;
-            double cost = 0;
+            double cost;
             double hour;
             
         if (shape == CIRCLE)
@@ -68,7 +68,7 @@ namespace CostCalculatorFinal
                 int rectangleLenght = Convert.ToInt32(Console.ReadLine());
 
 
-                area = rectangleWidth * rectangleLenght * PI;
+                area = rectangleWidth * rectangleLenght;
                 Console.WriteLine("Your area calculations are " + area);
                 
                 
