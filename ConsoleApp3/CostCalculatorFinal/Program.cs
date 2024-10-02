@@ -45,13 +45,13 @@ namespace CostCalculatorFinal
             {
                 Console.WriteLine("You have chosen triangle shape");
                 Console.WriteLine("Please enter area width: ");
-                int triangleAreaWidth = Convert.ToInt32(Console.ReadLine());
+                int triangleWidth = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Please enter area lenght: ");
-                int triangleAreaLenght = Convert.ToInt32(Console.ReadLine());
+                int triangleLenght = Convert.ToInt32(Console.ReadLine());
 
 
-                area = triangleAreaWidth * triangleAreaLenght / TRIANGLE_AREA;
+                area = triangleWidth * triangleLenght / TRIANGLE_AREA;
                 Console.WriteLine("Your area calculations are " + area);
 
 
@@ -62,13 +62,13 @@ namespace CostCalculatorFinal
             {
                 Console.WriteLine("You have chosen a rectangle ");
                 Console.WriteLine("Please enter area width: ");
-                int rectangleAreaWidth = Convert.ToInt32(Console.ReadLine());
+                int rectangleWidth = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Please enter area height: ");
-                int rectangleAreaLenght = Convert.ToInt32(Console.ReadLine());
+                int rectangleLenght = Convert.ToInt32(Console.ReadLine());
 
 
-                area = rectangleAreaWidth * rectangleAreaLenght * PI;
+                area = rectangleWidth * rectangleLenght * PI;
                 Console.WriteLine("Your area calculations are " + area);
                 
                 
@@ -81,7 +81,7 @@ namespace CostCalculatorFinal
                 Console.WriteLine("You will need " + hour + " " + "hours to finish the job");
 
                 cost = hour * HOURLY_RATE;
-                Console.WriteLine("Your total project cost is: $" + cost +" " + "dollars");
+                Console.WriteLine("Your total project cost is: $" + Math.Round(cost));
                 Console.WriteLine(("Supported shape"));
             }
 
