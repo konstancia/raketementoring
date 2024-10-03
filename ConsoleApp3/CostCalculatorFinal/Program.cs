@@ -78,11 +78,13 @@ namespace CostCalculatorFinal
                 Console.WriteLine("Your area calculations are " + area);
                 double cost;
                 double hour;
+                string totalHours = "hours to finish the job";
+                string dollars = "dollars";
                 hour = area / SQUARE_FEET_PER_HOUR;
-                Console.WriteLine("You will need " + Math.Round(hour) + " " + "hours to finish the job");
+                Console.WriteLine("You will need " + Math.Round(hour) + " " + totalHours);
 
                 cost = hour * HOURLY_RATE;
-                Console.WriteLine("Your total project cost is: $" + Math.Round(cost) + " " + "dollars");
+                Console.WriteLine("Your total project cost is: $" + Math.Round(cost) + " " + dollars);
                 Console.WriteLine(("Supported shape"));
             }
             
