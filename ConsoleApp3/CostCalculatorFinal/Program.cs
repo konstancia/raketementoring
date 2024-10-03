@@ -20,11 +20,12 @@ namespace CostCalculatorFinal
             Console.WriteLine($"Please choose a room shape:  {RECTANGLE} for Rectangle , {CIRCLE} for Circle,  {TRIANGLE} for Triangle");
             string shape = (Console.ReadLine());
             
-            if (shape != RECTANGLE || shape != TRIANGLE || shape != CIRCLE)
+            if (shape != RECTANGLE || shape != TRIANGLE || shape != CIRCLE) 
+                
+                Console.WriteLine("You choose the following shape: " + shape);
+            
                 Console.WriteLine("Invalid shape");
-
-            Console.WriteLine("You choose the following shape: " + shape);
-            double area = 0;
+                double area = 0;
            
             
         if (shape == CIRCLE)
@@ -70,10 +71,12 @@ namespace CostCalculatorFinal
 
             }
             
-            Console.WriteLine("Your area calculations are " + area);
+            //Console.WriteLine("Your area calculations are " + area);
 
             if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
+                
             {
+                Console.WriteLine("Your area calculations are " + area);
                 double cost;
                 double hour;
                 hour = area / SQUARE_FEET_PER_HOUR;
