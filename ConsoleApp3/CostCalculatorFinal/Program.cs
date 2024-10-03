@@ -19,11 +19,13 @@ namespace CostCalculatorFinal
 
             Console.WriteLine($"Please choose a room shape:  {RECTANGLE} for Rectangle , {CIRCLE} for Circle,  {TRIANGLE} for Triangle");
             string shape = (Console.ReadLine());
+            
+            if (shape != RECTANGLE || shape != TRIANGLE || shape != CIRCLE)
+                Console.WriteLine("Invalid shape");
 
             Console.WriteLine("You choose the following shape: " + shape);
             double area = 0;
-            double cost;
-            double hour;
+           
             
         if (shape == CIRCLE)
             {
@@ -32,7 +34,6 @@ namespace CostCalculatorFinal
                 int circleRadius = Convert.ToInt32(Console.ReadLine());
 
                 area = circleRadius * circleRadius * Math.PI;
-                Console.WriteLine("Your area calcuations are " + area);
 
                 //radius^2*pi
             }
@@ -51,9 +52,7 @@ namespace CostCalculatorFinal
 
 
                 area = triangleWidth * triangleLenght / TRIANGLE_AREA;
-                Console.WriteLine("Your area calculations are " + area);
-
-
+                
             }
             // if case to handle rectangle shapes
 
@@ -68,13 +67,15 @@ namespace CostCalculatorFinal
 
 
                 area = rectangleWidth * rectangleLenght;
-                Console.WriteLine("Your area calculations are " + (area));
-                
-                
+
             }
+            
+            Console.WriteLine("Your area calculations are " + area);
 
             if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
             {
+                double cost;
+                double hour;
                 hour = area / SQUARE_FEET_PER_HOUR;
                 Console.WriteLine("You will need " + Math.Round(hour) + " " + "hours to finish the job");
 
@@ -83,10 +84,10 @@ namespace CostCalculatorFinal
                 Console.WriteLine(("Supported shape"));
             }
 
-            else
-            {
-                Console.WriteLine("you have chosen unsupported shape");
-            }
+            //else
+            //{
+                //Console.WriteLine("you have chosen unsupported shape");
+            //}
             
     }
     }
