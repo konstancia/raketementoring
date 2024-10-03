@@ -71,7 +71,6 @@ namespace CostCalculatorFinal
 
             }
             
-            //Console.WriteLine("Your area calculations are " + area);
 
             if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
                 
@@ -86,11 +85,6 @@ namespace CostCalculatorFinal
                 Console.WriteLine("Your total project cost is: $" + Math.Round(cost) + " " + "dollars");
                 Console.WriteLine(("Supported shape"));
             }
-
-            //else
-            //{
-                //Console.WriteLine("you have chosen unsupported shape");
-            //}
             
     }
     }
