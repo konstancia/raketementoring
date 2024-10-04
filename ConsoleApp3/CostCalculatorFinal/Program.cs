@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.ComponentModel.Design;
 using System.Diagnostics;
 
 namespace CostCalculatorFinal
@@ -20,11 +21,8 @@ namespace CostCalculatorFinal
             Console.WriteLine($"Please choose a room shape:  {RECTANGLE} for Rectangle , {CIRCLE} for Circle,  {TRIANGLE} for Triangle");
             string shape = (Console.ReadLine());
             
-            if (shape != RECTANGLE || shape != TRIANGLE || shape != CIRCLE) 
                 
                 Console.WriteLine("You choose the following shape: " + shape);
-            
-                Console.WriteLine("Invalid shape");
                 double area = 0;
            
             
@@ -70,27 +68,32 @@ namespace CostCalculatorFinal
                 area = rectangleWidth * rectangleLenght;
 
             }
-            
+
 
             if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
-                
-            {
-                Console.WriteLine("Your area calculations are " + area);
-                double cost;
-                double hour;
-                string totalHours = "hours to finish the job";
-                string dollars = "dollars";
-                hour = area / SQUARE_FEET_PER_HOUR;
-                Console.WriteLine("You will need " + Math.Round(hour) + " " + totalHours);
 
-                cost = hour * HOURLY_RATE;
-                Console.WriteLine("Your total project cost is: $" + Math.Round(cost) + " " + dollars);
+            {
+                double cost;
+                double hours;
+                Console.WriteLine("Your area calculations are " + area);
+                string totalHours = "hours to finish the job";
+                string totalCost = "dollars";
+                hours = area / SQUARE_FEET_PER_HOUR;
+                Console.WriteLine("You will need " + Math.Round(hours) + " " + totalHours);
+
+                cost = hours * HOURLY_RATE;
+                Console.WriteLine($"Your total project cost is: $ + Math.Round(cost) {totalCost}");
                 Console.WriteLine(("Supported shape"));
+            }
+
+            else
+                {
+                    Console.WriteLine("Invalid shape");
+                }
             }
             
     }
     }
-}
 
 
 

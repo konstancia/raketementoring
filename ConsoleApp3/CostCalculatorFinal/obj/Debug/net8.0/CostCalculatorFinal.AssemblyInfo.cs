@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CostCalculatorFinal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e64f4aa63601f86402dd168123f1307cac4faaa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aba30dadf4490d83a26c49cdce186ab20f95fd63")]
 [assembly: System.Reflection.AssemblyProductAttribute("CostCalculatorFinal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CostCalculatorFinal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
