@@ -22,7 +22,7 @@ namespace CostCalculatorFinal
             string shape = (Console.ReadLine());
             
                 
-                Console.WriteLine("You choose the following shape: " + shape);
+                Console.WriteLine($"You choose the following shape: {shape }");
                 double area = 0;
            
             
@@ -75,7 +75,7 @@ namespace CostCalculatorFinal
             {
                 double cost;
                 double hours;
-                Console.WriteLine("Your area calculations are " + area);
+                Console.WriteLine($"Your area calculations are {area}");
                 string totalHours = "hours to finish the job";
                 string totalCost = "dollars";
                 hours = area / SQUARE_FEET_PER_HOUR;
