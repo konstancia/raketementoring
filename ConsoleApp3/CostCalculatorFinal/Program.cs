@@ -24,7 +24,7 @@ namespace CostCalculatorFinal
             string shape = (Console.ReadLine());
 
 
-            if (shape != RECTANGLE || shape != TRIANGLE || shape != CIRCLE) 
+            if (shape != RECTANGLE & shape != TRIANGLE & shape != CIRCLE) 
             {
                 Console.WriteLine("Invalid shape");
                 return;
