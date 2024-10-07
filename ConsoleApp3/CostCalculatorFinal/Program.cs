@@ -75,9 +75,8 @@ namespace CostCalculatorFinal
                     area = rectangleWidth * rectangleLenght;
 
                 }
-
-
-                if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
+                
+                //if (shape == RECTANGLE || shape == TRIANGLE || shape == CIRCLE)
 
                 {
                     double cost;
