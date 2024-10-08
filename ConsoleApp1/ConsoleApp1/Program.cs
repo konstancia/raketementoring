@@ -52,6 +52,18 @@ namespace ConsoleApp1
             if (aNumber > anotherNumber)
             {
                 Console.WriteLine("its bigger");
+            
+
+                        for (int i=0; i<5; i++)
+                        {
+                            Console.WriteLine("go to fridge");
+                            Console.WriteLine("open door");
+                            Console.WriteLine("close door");
+                            Console.WriteLine("etc");
+                        }
+
+                    }
+                }
             }
 
 
