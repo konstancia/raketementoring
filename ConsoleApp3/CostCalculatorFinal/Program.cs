@@ -41,7 +41,7 @@ namespace CostCalculatorFinal
 
                     area = circleRadius * circleRadius * Math.PI;
 
-                    //radius^2*pi
+                    //radius^2*pia
                 }
 
                 // if case to handle the triangle shapes
